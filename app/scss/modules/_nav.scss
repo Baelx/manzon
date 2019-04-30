@@ -1,0 +1,38 @@
+.site-header {
+  position: fixed;
+  width: 100%;
+  background-color: #c6c6ff;
+  z-index: 1;
+  padding: 10px 0;
+
+  &__logo {
+position: absolute;
+}
+
+
+  .wrapper {
+    padding-left: 18px;
+    padding-right: 18px;
+    max-width: 1236px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+  }
+
+  &__btn {
+    float: right;
+  }
+
+
+  li {
+    float: left;
+    display: block;
+    padding-right: 20px;
+  }
+
+
+}
+
+.site_header__primary-nav {
+  float: right;
+}
