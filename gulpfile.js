@@ -2,26 +2,24 @@ const gulp = require('gulp'),
 sass = require('gulp-sass'),
 browserSync = require('browser-sync').create();
 
-const processStyles = function() {
-  return gulp.src('app/scss/main.scss')
-  .pipe(sass())
-  .pipe(gulp.dest('app/css'))
-  .pipe(browserSync.reload({
-    stream: true
-  }))
+function style() {
+  return gulp.src('./app/scss/main.scss')
+  .pipe(sass().on('error', sass.logError))
+  .pipe(gulp.dest('./app/css'))
+  .pipe(browserSync.stream());
 };
 
-const initBS = function() {
+function watch() {
   browserSync.init({
     server: {
-      baseDir: 'app'
+      baseDir: './app'
     }
-  })
+  });
+  gulp.watch('./app/**/*.scss', style);
+  gulp.watch('./app/*.html').on('change', browserSync.reload);
+  gulp.watch('./app/js/**/*.js').on('change', browserSync.reload);
 };
 
-const watchFiles = function() {
-  gulp.watch('app/scss/**/*.scss', processStyles);
-  gulp.watch('app/*.html', browserSync.reload());
-};
 
-gulp.task('watch', gulp.parallel(processStyles, initBS, watchFiles))
+exports.style = style;
+exports.watch = watch;

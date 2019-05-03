@@ -1,8 +1,12 @@
 /* Normalize.css to reset per-browser rendering */
 @import 'normalize';
 
-/* Google font Francois One */
-@import url('https://fonts.googleapis.com/css?family=Francois+One');
+/* Google fonts */
+@import url('https://fonts.googleapis.com/css?family=Archivo+Narrow:400,600,700');
 
-@import 'modules/_global';
+@import 'global/_base';
+@import 'global/_media-queries';
 @import 'modules/_nav';
+@import 'modules/_hero';
+@import 'modules/_btn';
+@import 'modules/_intro';
