@@ -1,5 +1,5 @@
 .site-header {
-  background-color: #10205cc2;
+  background-image: linear-gradient($dark-blue, #10205cc2);
   text-align: center;
   position: fixed;
   width: 100%;
@@ -91,11 +91,11 @@
   }
 
   nav {
+    background-color: $dark-blue-transparent;
     position: absolute;
     text-align: left;
     top: 100%;
     left: 0;
-    background-color: #10205cc2;
     width: 100%;
     transform: scale(1,0);
     transform-origin: top;
@@ -165,6 +165,4 @@
       }
     }
   }
-
-
 }

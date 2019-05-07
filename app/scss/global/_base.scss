@@ -6,3 +6,10 @@ body {
 font-family: 'Archivo Narrow', sans-serif;
 font-weight: 700;
 }
+
+
+.clearfix::after {
+  content: '';
+  display: block;
+  clear: both;
+}

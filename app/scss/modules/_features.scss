@@ -1,0 +1,17 @@
+.features {
+  text-align: center;
+  font-size: 28px;
+
+  @include atMedium {
+    padding: 2.5em;
+  }
+
+  .fas {
+    padding-right: 5px;
+  }
+
+  .feature {
+    padding: 1.5rem;
+  }
+
+}

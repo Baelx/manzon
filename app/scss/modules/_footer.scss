@@ -1,0 +1,12 @@
+.site-footer {
+
+  background-color: #232323;
+  color: white;
+  padding: 1em;
+
+
+  @include atMedium {
+    padding: 5em;
+
+  }
+}

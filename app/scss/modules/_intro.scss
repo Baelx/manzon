@@ -1,7 +1,19 @@
 .intro {
-  background-color: white;
-  height: 400px;
+  background-color: $light-blue;
+  color: white;
   width: 100%;
-  position: relative;
   z-index: 1;
+
+  &__text {
+    margin: 0 3rem;
+    padding: 50px;
+
+    h3 {
+      font-size: 30px;
+    }
+
+    p {
+      font-size: 22px;
+    }
+  }
 }

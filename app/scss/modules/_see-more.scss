@@ -1,0 +1,46 @@
+.see-more {
+
+  background-color: $light-blue;
+  color: white;
+  width: 100%;
+  z-index: 1;
+
+  @include atMedium {
+    padding: 2rem 5rem;
+
+  }
+
+  h3 {
+    font-size: 30px;
+  }
+
+  p {
+    font-size: 22px;
+  }
+
+  .container--industries {
+    display: flex;
+
+    &__industry {
+      width: 50%;
+      height: 100%;
+      background-size: .25s ease;
+      background-size: auto 100%;
+
+      &--residential {
+        // background-color: $light-blue;
+
+      }
+
+      &--commercial {
+        // background-color: $dark-blue;
+
+      }
+
+    }
+  }
+
+
+
+
+}
