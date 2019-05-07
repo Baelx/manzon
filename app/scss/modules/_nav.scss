@@ -7,6 +7,7 @@
   text-transform: uppercase;
   color: white;
 
+
   @include atMedium {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 1fr);
@@ -15,7 +16,7 @@
   &__logo {
     @include atMedium {
       grid-column: 1 / 2;
-
+      padding: 0.5em;
     }
   }
 

@@ -335,7 +335,8 @@ body {
       grid-template-columns: 1fr auto minmax(600px, 1fr); } }
   @media (min-width: 800px) {
     .site-header__logo {
-      grid-column: 1 / 2; } }
+      grid-column: 1 / 2;
+      padding: 0.5em; } }
   .site-header__logo__title {
     font-size: 35px; }
   .site-header__logo__subtitle {
@@ -448,12 +449,13 @@ body {
   .btn:hover {
     cursor: pointer; }
   .btn--hero-cta {
-    background-color: #ffffff99;
-    border: 1px solid black;
+    color: white;
+    border: 3px solid white;
     padding: 5px 10px;
-    border-radius: 4px; }
+    border-radius: 2px; }
   .btn--hero-cta:hover {
-    background-color: white; }
+    background-color: white;
+    color: #10205c; }
 
 .text--ul {
   text-decoration: underline; }
@@ -471,6 +473,10 @@ body {
 
 .fas {
   color: #4f70ed; }
+
+.fab {
+  color: white;
+  font-size: 30px; }
 
 @media (min-width: 530px) {
   [class^=col-] {
@@ -492,6 +498,12 @@ body {
   @media (min-width: 530px) {
     .col-4 {
       width: 33.3%; } }
+
+.col-6 {
+  width: 100%; }
+  @media (min-width: 530px) {
+    .col-6 {
+      width: 50%; } }
 
 .intro {
   background-color: #9199b8;
@@ -543,29 +555,111 @@ body {
   background-color: #9199b8;
   color: white;
   width: 100%;
-  z-index: 1; }
+  z-index: 1;
+  text-align: center; }
   @media (min-width: 800px) {
     .see-more {
       padding: 2rem 5rem; } }
-  .see-more h3 {
-    font-size: 30px; }
   .see-more p {
     font-size: 22px; }
+  .see-more__industry {
+    width: 50%;
+    margin: 15px;
+    background-size: cover;
+    background-position: bottom; }
+    .see-more__industry::after {
+      position: relative;
+      display: block;
+      content: "";
+      bottom: 100%;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 40, 56, 0.3);
+      -webkit-transition: background-color .25s ease;
+      transition: background-color .25s ease; }
+    .see-more__industry a {
+      z-index: 3;
+      height: 100%;
+      position: relative;
+      display: block;
+      padding: 30px 38px 40px;
+      color: unset;
+      text-decoration: none; }
+      .see-more__industry a a:hover > span {
+        width: 100%; }
+      .see-more__industry a .overline {
+        position: absolute;
+        left: 50%;
+        top: 0;
+        transform: translateX(-50%);
+        display: block;
+        height: 10px;
+        width: 100px;
+        -webkit-transition: all .25s ease;
+        transition: all .25s ease;
+        background-color: white; }
+    .see-more__industry h3 {
+      padding: 6rem;
+      color: white;
+      font-size: 30px; }
   .see-more .container--industries {
     display: flex; }
-    .see-more .container--industries__industry {
-      width: 50%;
-      height: 100%;
-      background-size: .25s ease;
-      background-size: auto 100%; }
 
 .reviews {
   background-color: #9199b8;
   color: white;
   width: 100%;
-  padding: 7rem; }
+  padding: 4rem 7rem 7rem 7rem;
+  text-align: center; }
+  .reviews h3 {
+    font-size: 30px; }
   .reviews q {
     font-size: 30px; }
+
+.service-areas h3 {
+  text-align: center;
+  font-size: 30px;
+  margin-top: 3rem; }
+
+.service-areas .areas--first {
+  float: left;
+  text-align: left;
+  padding-left: 5rem; }
+
+.service-areas .areas--second {
+  float: right;
+  text-align: right;
+  padding-right: 5rem; }
+
+.service-areas li {
+  font-size: 23px;
+  padding: 1rem 0;
+  color: #4f70ed;
+  text-shadow: 1px 1px 1px #10205c; }
+
+.service-areas .map {
+  margin: 1.5rem 0 6rem 0;
+  padding: 0;
+  border: 5px solid lightgrey;
+  border-radius: 2px;
+  box-shadow: 3px 3px 2px black; }
+
+.call-to-action {
+  text-align: center;
+  padding: 2rem 0; }
+  .call-to-action h3 {
+    font-size: 30px; }
+  .call-to-action .btn {
+    font-size: 20px;
+    padding: 1rem 2rem;
+    color: #10205c;
+    border: 5px solid #4f70ed;
+    margin-bottom: 1rem; }
+    .call-to-action .btn:hover {
+      color: white;
+      border: 5px solid #4f70ed;
+      background-color: #4f70ed; }
 
 .site-footer {
   background-color: #232323;
@@ -574,3 +668,6 @@ body {
   @media (min-width: 800px) {
     .site-footer {
       padding: 5em; } }
+  .site-footer .social-icons li {
+    float: left;
+    padding-right: 0.5rem; }

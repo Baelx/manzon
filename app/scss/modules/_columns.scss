@@ -38,3 +38,13 @@
   }
 
 }
+
+.col-6 {
+  width: 100%;
+
+  @include atSmall {
+    width: 50%;
+
+  }
+
+}
