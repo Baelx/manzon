@@ -546,10 +546,9 @@ body {
   @media (min-width: 800px) {
     .features {
       padding: 2.5em; } }
-  .features .fas {
-    padding-right: 5px; }
-  .features .feature {
-    padding: 1.5rem; }
+  .features .feature .fa-check {
+    width: 22px;
+    overflow: hidden; }
 
 .see-more {
   background-color: #9199b8;
@@ -586,8 +585,6 @@ body {
       padding: 30px 38px 40px;
       color: unset;
       text-decoration: none; }
-      .see-more__industry a a:hover > span {
-        width: 100%; }
       .see-more__industry a .overline {
         position: absolute;
         left: 50%;
@@ -620,7 +617,8 @@ body {
 .service-areas h3 {
   text-align: center;
   font-size: 30px;
-  margin-top: 3rem; }
+  padding-top: 3rem;
+  margin-top: 0; }
 
 .service-areas .areas--first {
   float: left;

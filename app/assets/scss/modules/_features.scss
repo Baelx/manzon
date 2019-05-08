@@ -1,0 +1,30 @@
+.features {
+  text-align: center;
+  font-size: 28px;
+
+  @include atMedium {
+    padding: 2.5em;
+  }
+
+
+
+  .fas {
+  }
+
+  .feature {
+    // padding: 1.5rem;
+
+    .fa-check {
+      // transform: scale(0, 1);
+      // transform-origin: left;
+      // transition: transform ease-in-out 250ms;
+      //
+    width: 22px;
+    overflow: hidden;
+
+    // padding-right: 2.2rem;
+
+    }
+  }
+
+}
