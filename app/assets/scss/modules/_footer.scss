@@ -1,4 +1,6 @@
 .site-footer {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
 
   background-color: #232323;
   color: white;
@@ -10,13 +12,19 @@
 
   }
 
+//   h2, h3 {
+//     margin-top: 1em;
+//
+// }
+
+
   .social-icons {
 
     li {
       float: left;
       padding-right: 0.5rem;
+      font-weight: 300;
     }
-
   }
 
 }

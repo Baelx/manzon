@@ -3,7 +3,7 @@ box-sizing: border-box;
 }
 
 body {
-font-family: 'Archivo Narrow', sans-serif;
+font-family: 'Archivo', sans-serif;
 font-weight: 700;
 }
 
@@ -12,4 +12,9 @@ font-weight: 700;
   content: '';
   display: block;
   clear: both;
+}
+
+a {
+text-decoration: none;
+color: white;
 }
