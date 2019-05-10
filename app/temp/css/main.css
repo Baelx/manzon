@@ -505,6 +505,9 @@ body {
     .col-6 {
       width: 50%; } }
 
+.section-title {
+  font-size: 35px; }
+
 .intro {
   background-color: #9199b8;
   color: white;
@@ -538,14 +541,15 @@ body {
     height: 300px;
     background-color: #0000009e;
     padding: 5px 30px;
-    border-radius: 7px; }
+    border-radius: 7px;
+    line-height: 1.3; }
 
 .features {
   text-align: center;
   font-size: 28px; }
   @media (min-width: 800px) {
     .features {
-      padding: 2.5em; } }
+      padding: 1.5em; } }
   .features .feature .fa-check {
     width: 22px;
     overflow: hidden; }
@@ -560,7 +564,8 @@ body {
     .see-more {
       padding: 2rem 5rem; } }
   .see-more p {
-    font-size: 22px; }
+    font-size: 22px;
+    padding: 1rem; }
   .see-more__industry {
     width: 50%;
     margin: 15px;
@@ -609,10 +614,11 @@ body {
   width: 100%;
   padding: 4rem 7rem 7rem 7rem;
   text-align: center; }
-  .reviews h3 {
-    font-size: 30px; }
   .reviews q {
     font-size: 30px; }
+
+.service-areas .cover {
+  background-color: rgba(255, 255, 255, 0.6); }
 
 .service-areas h3 {
   text-align: center;
