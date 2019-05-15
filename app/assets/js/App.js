@@ -1,3 +1,3 @@
-import {AnimateOnScroll} from './modules/AnimateOnScroll';
+import AnimateOnScroll from './modules/AnimateOnScroll';
 
 let animateOnScroll = new AnimateOnScroll();

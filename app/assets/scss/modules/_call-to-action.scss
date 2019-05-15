@@ -17,12 +17,15 @@
       top: 1.2em;
       left: 0;
       right: 0;
+    }
+
+    .hide-underline {
       transform: scale(0,1);
       transform-origin: left;
       transition: transform ease-in-out 250ms;
     }
-    
-    &:hover::before {
+
+    .underline-item {
       transform: scale(1,1);
     }
 
