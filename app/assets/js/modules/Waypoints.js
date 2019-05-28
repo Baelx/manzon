@@ -12,8 +12,6 @@ class WPHelper {
 
   hideInitially() {
     this.itemsToAnimate.addClass("hide-underline");
-    console.log("hello");
-
   }
 
 

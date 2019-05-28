@@ -1,11 +1,12 @@
-.underline--title {
-  font-size: 30px;
-  margin-bottom: 2rem;
+.underline--feature {
+  margin: 1em 0;
   display: block;
-  height: 6px;
-  background: white;
-  z-index: 1;
+  height: 2px;
+  background: black;
   position: relative;
+  transform: scale(0,1);
+  transform-origin: left;
+  transition: transform ease-in-out 500ms;
 }
 
 .underline {
