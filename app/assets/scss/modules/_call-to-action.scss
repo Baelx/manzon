@@ -1,34 +1,40 @@
+.call-now {
+  font-size: 33px;
+  margin-bottom: 3px;
+}
+
+.cta {
+  &--header {
+
+  }
+}
+
 .call-to-action {
-  text-align: center;
+  // text-align: center;
   padding: 2rem 0;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 
 
-  span {
+
+  .underline {
     display: inline-block;
     font-size: 30px;
     margin-bottom: 2rem;
+    display: block;
+    height: 5px;
+    background: black;
+  }
 
-    &::before {
-      content: '';
-      display: block;
-      height: 5px;
-      background: black;
-      position: relative;
-      top: 1.2em;
-      left: 0;
-      right: 0;
-    }
+  .hide-underline {
+    transform: scale(0,1);
+    transform-origin: left;
+    transition: transform ease-in-out 500ms;
+  }
 
-    .hide-underline {
-      transform: scale(0,1);
-      transform-origin: left;
-      transition: transform ease-in-out 250ms;
-    }
-
-    .underline-item {
-      transform: scale(1,1);
-    }
-
+  .show-underline {
+    transform: scale(1,1);
   }
 
 

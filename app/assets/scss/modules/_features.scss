@@ -6,23 +6,36 @@
     padding: 1.5em;
   }
 
-  .fas {
+  .container--industry {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
   }
 
   .feature {
-    // padding: 1.5rem;
+    display: flex;
+    align-items: center;
 
-    .fa-check {
-      // transform: scale(0, 1);
-      // transform-origin: left;
-      // transition: transform ease-in-out 250ms;
-      //
-    width: 22px;
-    overflow: hidden;
-
-    // padding-right: 2.2rem;
+    p {
+      display: inline;
 
     }
+
+    &__title {
+      border-bottom: 2px solid grey;
+      padding-bottom: 13px;
+    }
+
+    &--detail {
+      margin: 0 1em;
+
+
+      p {
+        font-size: 20px;
+        margin-top: 0;
+        font-weight: 300;
+      }
+    }
+
   }
 
 }

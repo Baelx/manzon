@@ -1,0 +1,13 @@
+.gallery {
+  height: 600px;
+  width: 100%;
+  background-color: $dark-blue;
+
+  &__residential {
+
+    .photo {
+      width: 500px;
+      height: 500px;
+    }
+  }
+}
