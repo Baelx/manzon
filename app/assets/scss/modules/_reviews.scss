@@ -1,12 +1,43 @@
 .reviews {
-  background-color: $light-blue;
-  color: white;
-  width: 100%;
-  padding: 4rem 7rem 7rem 7rem;
-  text-align: center;
 
-  q{
-    font-size: 30px;
+  &--section {
+    background-color: $light-blue;
+    color: white;
+    width: 100%;
+    padding: 4rem 7rem 7rem 7rem;
+    text-align: center;
+
+    q {
+      font-size: 30px;
+    }
+  }
+
+  &--main {
+    color: white;
+    text-align: center;
+    background-color: $light-blue;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 2em 5em 2em 5em;
+
+    h3 {
+      grid-column: span 2;
+    }
+
+    .single-review {
+      margin: 2em;
+    }
+
+    q {
+      font-size: 25px;
+      font-weight: 300;
+      padding: 2em;
+    }
+
+    cite {
+      font-size: 20px;
+
+    }
   }
 
 }

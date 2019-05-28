@@ -4,5 +4,6 @@ import slick from 'slick-carousel';
 
 import Slider from './modules/Slider';
 
-new WPHelper($(".underline"), "50%");
+let ctaUnderline = new WPHelper($(".underline"), "70%");
+let pageTitleUnderline = new WPHelper($(".underline-title"), "0%");
 // let resSlider = new Slider();

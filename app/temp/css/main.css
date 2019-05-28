@@ -325,6 +325,12 @@ a {
   text-decoration: none;
   color: white; }
 
+.accent--res {
+  color: #4f70ed; }
+
+.accent--com {
+  color: #9199b8; }
+
 .site-header {
   background-image: linear-gradient(#10205c, #10205cc2);
   text-align: center;
@@ -512,7 +518,10 @@ a {
       width: 50%; } }
 
 .section-title {
-  font-size: 35px; }
+  font-size: 35px;
+  text-align: center; }
+  .section-title--info {
+    font-size: 45px; }
 
 .intro {
   background-color: #9199b8;
@@ -549,7 +558,7 @@ a {
   .hero .hero__text--headline {
     font-size: 28px; }
   .hero--industry-page {
-    height: 300px;
+    height: 400px;
     width: 100%; }
     .hero--industry-page::after {
       position: absolute;
@@ -560,13 +569,14 @@ a {
       width: 100%;
       height: 100%;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black); }
+    .hero--industry-page__title {
+      padding: 170px 90px;
+      display: inline-block; }
     .hero--industry-page h1 {
       color: white;
       text-transform: uppercase;
       font-size: 100px;
-      margin-left: 1em;
       position: relative;
-      padding: 100px;
       margin: 0;
       z-index: 1;
       font-weight: 200;
@@ -574,6 +584,13 @@ a {
   .hero--home-page {
     height: 650px;
     overflow: hidden; }
+  .hero--info-page {
+    height: 250px; }
+    .hero--info-page h1 {
+      margin: 0;
+      padding: 140px;
+      text-align: center;
+      font-size: 50px; }
 
 .features {
   text-align: center;
@@ -590,7 +607,7 @@ a {
     .features .feature p {
       display: inline; }
     .features .feature__title {
-      border-bottom: 2px solid grey;
+      border-bottom: 2px solid black;
       padding-bottom: 13px; }
     .features .feature--detail {
       margin: 0 1em; }
@@ -653,14 +670,36 @@ a {
   .see-more .container--industries {
     display: flex; }
 
-.reviews {
+.reviews--section {
   background-color: #9199b8;
   color: white;
   width: 100%;
   padding: 4rem 7rem 7rem 7rem;
   text-align: center; }
-  .reviews q {
+  .reviews--section q {
     font-size: 30px; }
+
+.reviews--main {
+  color: white;
+  text-align: center;
+  background-color: #9199b8;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2em 5em 2em 5em; }
+  .reviews--main h3 {
+    grid-column: span 2; }
+  .reviews--main .single-review {
+    margin: 2em; }
+  .reviews--main q {
+    font-size: 25px;
+    font-weight: 300;
+    padding: 2em; }
+  .reviews--main cite {
+    font-size: 20px; }
+
+.before-and-after {
+  background-color: #9199b8;
+  color: white; }
 
 .service-areas {
   background-size: cover;
@@ -699,19 +738,6 @@ a {
   display: flex;
   align-items: center;
   flex-direction: column; }
-  .call-to-action .underline {
-    display: inline-block;
-    font-size: 30px;
-    margin-bottom: 2rem;
-    display: block;
-    height: 5px;
-    background: black; }
-  .call-to-action .hide-underline {
-    transform: scale(0, 1);
-    transform-origin: left;
-    transition: transform ease-in-out 500ms; }
-  .call-to-action .show-underline {
-    transform: scale(1, 1); }
   .call-to-action .btn {
     font-size: 20px;
     padding: 1rem 2rem;
@@ -722,6 +748,30 @@ a {
       color: white;
       border: 5px solid #4f70ed;
       background-color: #4f70ed; }
+
+.underline--title {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  display: block;
+  height: 6px;
+  background: white;
+  z-index: 1;
+  position: relative; }
+
+.underline {
+  font-size: 30px;
+  margin-bottom: 2rem;
+  display: block;
+  height: 5px;
+  background: black; }
+
+.hide-underline {
+  transform: scale(0, 1);
+  transform-origin: left;
+  transition: transform ease-in-out 500ms; }
+
+.show-underline {
+  transform: scale(1, 1); }
 
 svg {
   width: 50px;
@@ -767,7 +817,28 @@ svg {
 .gallery {
   height: 600px;
   width: 100%;
-  background-color: #10205c; }
+  background-color: #10205c;
+  color: white; }
   .gallery__residential .photo {
     width: 500px;
     height: 500px; }
+
+.about-content {
+  padding: 0 6em;
+  line-height: 1.5; }
+  .about-content--top {
+    text-align: center; }
+  .about-content--left {
+    max-width: 50%;
+    padding: 0.5em 1.5em; }
+  .about-content--right {
+    float: right;
+    max-width: 50%;
+    padding: 0.5em 1.5em;
+    display: inline-block; }
+  .about-content p {
+    font-size: 30px;
+    font-weight: 300; }
+
+.contact__form {
+  text-align: center; }

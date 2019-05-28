@@ -1,0 +1,25 @@
+.about-content {
+  padding: 0 6em;
+  line-height: 1.5;
+
+    &--top {
+      text-align: center;
+    }
+
+    &--left {
+      max-width: 50%;
+      padding: 0.5em 1.5em;
+    }
+
+    &--right {
+      float: right;
+      max-width: 50%;
+      padding: 0.5em 1.5em;
+      display: inline-block;
+    }
+
+  p {
+    font-size: 30px;
+    font-weight: 300;
+  }
+}

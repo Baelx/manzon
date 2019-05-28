@@ -1,4 +1,8 @@
 .section-title {
   font-size: 35px;
+  text-align: center;
 
+  &--info {
+    font-size: 45px;
+  }
 }
