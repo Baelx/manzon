@@ -1,5 +1,8 @@
-/* Normalize.css to reset per-browser rendering */
+/* Normalize.css to reset browser-specific rendering */
 @import 'normalize';
+
+/* Slick Carousel */
+@import 'modules/slick.scss';
 
 /* Google fonts */
 @import url('https://fonts.googleapis.com/css?family=Archivo:400,600|Roboto:300,400');

@@ -1,9 +1,10 @@
 import WPHelper from './modules/Waypoints';
 import $ from 'jquery';
-import slick from 'slick-carousel';
-
 import Slider from './modules/Slider';
+// import slick from 'slick-carousel';
 
 let ctaUnderline = new WPHelper($(".underline"), "70%");
 let featureUnderline = new WPHelper($(".underline--feature"), "80%");
-// let resSlider = new Slider();
+
+// Gallery slider
+let residentialSlider = new Slider($('.gallery__residential'), $('.gallery__residential--nav'));

@@ -10,5 +10,15 @@
       width: 500px;
       height: 500px;
     }
+
+    &--nav
+      float: right;
+max-width: 400px;
+
+    img{
+      width: 40px;
+      height: 40px;
+    }
   }
+
 }

@@ -21,6 +21,7 @@
     "webpack-stream": "^5.2.1"
   },
   "dependencies": {
+    "@glidejs/glide": "^3.3.0",
     "jquery": "^3.4.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
