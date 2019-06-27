@@ -3,33 +3,26 @@ import waypoints from '../../../../node_modules/waypoints/lib/noframework.waypoi
 
 //Waypoints helper class
 class WPHelper {
-  constructor(elms, offset) {
+  constructor(elms, offset, classToApply) {
     this.itemsToAnimate = elms;
     this.offsetPercent = offset;
-    this.hideInitially();
+    this.classToApply = classToApply;
     this.createWaypoint();
   }
 
-  hideInitially() {
-    this.itemsToAnimate.addClass("hide-underline");
-  }
-
-
   createWaypoint() {
-    var that = this;
+    let that = this;
     this.itemsToAnimate.each(function() {
-      var currentItem = this;
+      let currentItem = this;
       new Waypoint({
         element: currentItem,
         handler: function() {
-          $(currentItem).addClass("show-underline");
+          $(currentItem).addClass(that.classToApply);
         },
         offset: that.offsetPercent
       });
     });
   }
-
-
 }
 
 

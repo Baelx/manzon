@@ -5,43 +5,32 @@
   color: white;
   // max-width: 1024px;
 
-  &__container {
-    max-width: 80%;
-  }
+  // &__container {
+  //   max-width: 80%;
+  // }
 
   &__residential {
-
-    &--nav {
-
-      // max-width: 400px;
-      // float: right;
-
-    }
-
-    img{
-      width: 40px;
-      height: 40px;
-    }
-  }
-
-  .photo {
-    width: 500px;
-    height: 500px;
-
-    &--nav {
-      width: inherit;
-      height: inherit;
-      height: 100px;
-      // width: auto !important;
-    }
-  }
+}
 
 }
 
-.slick-prev {
-
+.main {
+  font-family:Arial;
+  width:500px;
+  display:block;
+  margin:0 auto;
 }
 
-.slick-next {
 
+.photo {
+  max-height: 300px;
+  width: auto;
+}
+
+.nav {
+  background: #fff;
+  padding: 2%;
+  height: 80px;
+  width: auto;
+  margin: 10px;
 }

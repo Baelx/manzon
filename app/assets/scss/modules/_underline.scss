@@ -15,14 +15,11 @@
   display: block;
   height: 5px;
   background: black;
-}
-
-.hide-underline {
   transform: scale(0,1);
-  transform-origin: left;
-  transition: transform ease-in-out 500ms;
 }
 
 .show-underline {
   transform: scale(1,1);
+  transform-origin: left;
+  transition: transform ease-in-out 500ms;
 }

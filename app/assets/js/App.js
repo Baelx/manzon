@@ -1,18 +1,61 @@
 import $ from 'jquery';
+import slick from 'slick-carousel';
 
 // Import local modules
 import WPHelper from './modules/Waypoints';
-import Slider from './modules/Slider';
+import { Slider, GallerySlider } from './modules/Slider';
 import seeMoreHover from './modules/Hover';
 
 // Instantiate new waypoints
-let ctaUnderline = new WPHelper($(".underline"), "70%");
-let featureUnderline = new WPHelper($(".underline--feature"), "80%");
+const ctaUnderline = new WPHelper($(".underline"), "70%", "show-underline");
+const featureUnderline = new WPHelper($(".underline--feature"), "80%", "show-underline");
 
-// Gallery slider
-let residentialSlider = new Slider($('.gallery__residential'), $('.gallery__residential--nav'));
+const checkMarks = new WPHelper($(".check"), "80%", "check--animate");
+
+
+// // Gallery sliders
+// const residentialSlider = new GallerySlider($('.gallery__residential'), $('.gallery__residential--nav'));
+// const commercialSlider = new GallerySlider($('.gallery__commercial'), $('.gallery__commercial--nav'));
+
+// Reviews slider
+const reviewsSlider = new Slider($('.reviews--slider'), {
+  autoplay: true,
+  arrows: false,
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  dots: true,
+  focusOnSelect: true
+});
 
 // Hover effect
 seeMoreHover($(".see-more__industry--residential"));
 seeMoreHover($(".see-more__industry--commercial"));
-// const hover = new Hover();
+
+
+
+// TESTING
+$('.slider-display').slick({
+  slidesToShow: 1,
+  slidesToScroll: 1,
+  arrows: false,
+  fade: true,
+  asNavFor: '.slider-nav',
+  autoplay: true,
+  autoplaySpeed: 4000,
+  lazyLoad: 'ondemand',
+  pauseOnFocus: true
+});
+
+$('.slider-nav').slick({
+  slidesToShow: 3,
+  slidesToScroll: 1,
+  asNavFor: '.slider-display',
+  arrows: true,
+  focusOnSelect: true,
+  variableWidth: true,
+  autoplay: true,
+  autoplaySpeed: 4000,
+  lazyLoad: 'progressive',
+  pauseOnFocus: true
+
+});

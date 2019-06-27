@@ -2,36 +2,40 @@
 import slick from 'slick-carousel';
 
 class Slider {
-  constructor(sliderClass, sliderNavClass) {
+  constructor(sliderClass, options) {
     this.sliderClass = sliderClass;
+    this.options = options;
+    this.initSlider();
+  }
+
+  initSlider() {
+    this.sliderClass.slick(this.options);
+  }
+}
+
+class GallerySlider extends Slider {
+  constructor(sliderClass, sliderNavClass){
+    super(sliderClass);
     this.sliderNavClass = sliderNavClass;
     this.initSlider();
     this.initNav();
   }
 
   initSlider() {
-    this.sliderClass.slick({
-      autoplay: true,
-      fade: true,
-      arrows: false,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      // asNavFor: this.sliderNavClass,
-      dots: true,
-      focusOnSelect: true
-    });
+    return super.initSlider();
   }
 
   initNav() {
     this.sliderNavClass.slick({
       dots: true,
       infinite: true,
-      speed: 300,
+      speed: 3000,
       slidesToShow: 1,
       centerMode: true,
       variableWidth: true
     });
   }
+
 }
 
-export default Slider;
+export { Slider, GallerySlider };

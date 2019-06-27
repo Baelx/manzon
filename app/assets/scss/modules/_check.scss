@@ -11,7 +11,9 @@ svg {
   stroke-width: 15;
   stroke-linecap: round;
   stroke-miterlimit: 10;
-  -webkit-animation: dash-check 1.25s .40s ease-in-out forwards;
+}
+
+.check--animate {
   animation: dash-check 1.25s .40s ease-in-out forwards;
 }
 
