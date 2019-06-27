@@ -3,12 +3,6 @@
   margin-bottom: 3px;
 }
 
-.cta {
-  &--header {
-
-  }
-}
-
 .call-to-action {
   padding: 2rem 0;
   display: flex;
@@ -26,6 +20,11 @@
       color: white;
       border: 5px solid $med-blue;
       background-color: $med-blue;
+      transform: scale3d(1.05, 1.05, 1);
     }
+  }
+
+  &__call-now {
+    margin-bottom: 2em;
   }
 }

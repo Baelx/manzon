@@ -1,8 +1,13 @@
 .section-title {
   font-size: 35px;
   text-align: center;
+  padding: 3rem 0 2rem 0;
 
   &--info {
     font-size: 45px;
+  }
+
+  &--no-p {
+    padding: 0;
   }
 }

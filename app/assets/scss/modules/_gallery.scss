@@ -3,28 +3,28 @@
   width: 100%;
   background-color: $dark-blue;
   color: white;
-  // max-width: 1024px;
-
-  // &__container {
-  //   max-width: 80%;
-  // }
 
   &__residential {
-}
+  }
 
 }
 
 .main {
-  font-family:Arial;
-  width:500px;
-  display:block;
-  margin:0 auto;
+  margin: 2rem 2rem;
+  width: 80%;
+
+}
+
+.slider-display {
+
 }
 
 
 .photo {
   max-height: 300px;
   width: auto;
+  display:block;
+  margin:0 auto;
 }
 
 .nav {

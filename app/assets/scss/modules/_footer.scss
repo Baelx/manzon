@@ -1,22 +1,15 @@
 .site-footer {
   font-family: 'Roboto', sans-serif;
   font-weight: 300;
-
   background-color: #232323;
   color: white;
   padding: 1em;
 
 
   @include atMedium {
-    padding: 5em;
+    padding: 4em;
 
   }
-
-//   h2, h3 {
-//     margin-top: 1em;
-//
-// }
-
 
   .social-icons {
 
@@ -24,6 +17,12 @@
       float: left;
       padding-right: 0.5rem;
       font-weight: 300;
+      transition: all 0.1s linear;
+
+
+      &:hover {
+        transform: scale3d(1.2, 1.2, 1);
+      }
     }
   }
 

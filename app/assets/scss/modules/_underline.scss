@@ -11,11 +11,15 @@
 
 .underline {
   font-size: 30px;
-  margin-bottom: 2rem;
+  // margin-bottom: 2rem;
   display: block;
   height: 5px;
   background: black;
   transform: scale(0,1);
+
+  &--white {
+    background: white;
+  }
 }
 
 .show-underline {
