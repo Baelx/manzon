@@ -1,5 +1,5 @@
 .gallery {
-  height: 600px;
+  // height: 600px;
   width: 100%;
   background-color: $dark-blue;
   color: white;
@@ -10,9 +10,9 @@
 }
 
 .main {
-  margin: 2rem 2rem;
+  // margin: 2rem 2rem;
   width: 80%;
-
+margin: 0 auto;
 }
 
 .slider-display {
@@ -21,7 +21,7 @@
 
 
 .photo {
-  max-height: 300px;
+  max-height: 400px;
   width: auto;
   display:block;
   margin:0 auto;

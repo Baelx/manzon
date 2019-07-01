@@ -533,7 +533,8 @@ a {
 .btn {
   padding: 0;
   border: none;
-  background: none; }
+  background: none;
+  margin: 2rem; }
   .btn:hover {
     cursor: pointer; }
   .btn--hero-cta {
@@ -628,7 +629,7 @@ a {
     color: white;
     top: 50%;
     left: 0;
-    transform: translate(30%, -140%);
+    transform: translate(25%, -125%);
     width: 530px;
     background-color: #0000009e;
     padding: 3em 2em;
@@ -950,17 +951,16 @@ svg {
       transform: scale3d(1.2, 1.2, 1); }
 
 .gallery {
-  height: 600px;
   width: 100%;
   background-color: #10205c;
   color: white; }
 
 .main {
-  margin: 2rem 2rem;
-  width: 80%; }
+  width: 80%;
+  margin: 0 auto; }
 
 .photo {
-  max-height: 300px;
+  max-height: 400px;
   width: auto;
   display: block;
   margin: 0 auto; }
