@@ -5,6 +5,7 @@
   width: 100%;
   z-index: 1;
   text-align: center;
+  padding: 2rem;
 
   @include atMedium {
     padding: 2rem 5rem;
@@ -22,8 +23,16 @@
 
 
   &__industry {
-    width: 50%;
-    margin: 15px;
+    width: 80%;
+    margin: 0 auto;
+  margin-bottom: 15px;
+
+
+@include atMedium {
+  width: 50%;
+  margin: 15px;
+}
+
     background-size: 100%;
     background-position: bottom;
     transition: background-size 0.25s ease;
@@ -74,13 +83,19 @@
       padding: 6rem;
       color: white;
       font-size: 30px;
+      display: flex;
+    justify-content: center;
     }
 
   }
 
 
   .container--industries {
-    display: flex;
+    display: block;
+
+    @include atMedium {
+      display: flex;
+    }
   }
 
 }
