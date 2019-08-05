@@ -12,4 +12,19 @@ const seeMoreHover = (selector) => {
   )
 }
 
-export default seeMoreHover;
+const phoneHover = (selector) => {
+  console.log("test1");
+  
+  $(selector).hover(
+    function() {
+      console.log('test2');
+      $('.site-header__btn__phone').addClass('phone-shake');
+    }, function() {
+      console.log("unhover")
+    }
+  )
+}
+
+const sus = 56;
+
+export {seeMoreHover, phoneHover, sus};
