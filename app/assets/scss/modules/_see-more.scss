@@ -1,16 +1,14 @@
 .see-more {
-
   background-color: $light-blue;
   color: white;
   width: 100%;
   z-index: 1;
   text-align: center;
-  padding: 2rem;
+  padding: 2rem 0 2rem 0;
 
-  @include atMedium {
+  @include atMedLarge {
     padding: 2rem 5rem;
   }
-
 
   p {
     font-size: 22px;
@@ -21,21 +19,27 @@
     background-size: 120% auto;
   }
 
-
   &__industry {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
-  margin-bottom: 15px;
+    margin-bottom: 15px;
 
+    @include atSmall {
+      width: 80%;
+    }
 
-@include atMedium {
-  width: 50%;
-  margin: 15px;
-}
+    @include atMedium {
+      width: 50%;
+      margin: 15px;
+    }
 
-    background-size: 100%;
+    background-size: 125%;
     background-position: bottom;
     transition: background-size 0.25s ease;
+
+    @include atSmall {
+      background-size: 100%;
+    }
 
     &::after {
       position: relative;
@@ -48,7 +52,6 @@
       background-color: $blue-green-transparent;
     }
 
-
     a {
       z-index: 3;
       height: 100%;
@@ -58,7 +61,6 @@
       color: unset;
       text-decoration: none;
 
-
       .overline {
         position: absolute;
         left: 50%;
@@ -67,28 +69,24 @@
         display: block;
         height: 10px;
         width: 100px;
-        -webkit-transition: all .25s ease;
-        transition: all .25s ease;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
         background-color: white;
 
         &--extend {
           width: 100%;
         }
       }
-
     }
-
 
     h3 {
       padding: 6rem;
       color: white;
       font-size: 30px;
       display: flex;
-    justify-content: center;
+      justify-content: center;
     }
-
   }
-
 
   .container--industries {
     display: block;
@@ -97,5 +95,4 @@
       display: flex;
     }
   }
-
 }

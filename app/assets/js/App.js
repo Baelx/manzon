@@ -5,7 +5,7 @@ import smoothScroll from 'jquery-smooth-scroll';
 // Import local modules
 import WPHelper from './modules/Waypoints';
 import { Slider, GallerySlider } from './modules/Slider';
-import {seeMoreHover, phoneHover, sus} from './modules/Hover';
+import {seeMoreHover, phoneHover} from './modules/Hover';
 
 // Instantiate new waypoints
 const ctaUnderline = new WPHelper($(".underline"), "70%", "show-underline");

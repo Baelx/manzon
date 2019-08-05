@@ -6,11 +6,22 @@
   z-index: 99;
   text-transform: uppercase;
   color: white;
+  font-size: 1.5em;
+
+  @include atSmall {
+  font-size: 1em;
+  }
 
   @include atMedium {
     display: grid;
     grid-template-columns: 1fr auto minmax(600px, 1fr);
   }
+
+  @include atMedLarge {
+    font-size: 0.9em;
+  }
+
+
 
   &__logo {
     @include atMedium {
@@ -48,13 +59,14 @@
     position: absolute;
     left: 0;
     top: 0;
-    margin-left: 1em;
+    margin-left: 0.5em;
     height: 100%;
     display: flex;
     align-items: center;
 
     @include atMedium {
       display: none;
+
     }
   }
 
@@ -73,7 +85,6 @@
   &__nav-toggle-label__bars,
   &__nav-toggle-label__x {
     position: absolute;
-    transform: rotate(90deg);
   }
   &__nav-toggle-label__x {
     opacity: 0;
@@ -109,9 +120,7 @@
 
     &__phone {
       padding-left: 0.3em;
-
     }
-
   }
 
   nav {
@@ -148,14 +157,17 @@
         margin-left: 1em;
 
         @include atMedium {
-          margin-left: 3em;
+          margin-bottom: 0;
+          margin-left: 1.5em;
+        }
+
+        @include atMedLarge {
           margin-bottom: 0;
         }
 
         a {
           text-decoration: none;
           color: white;
-          font-size: 1.2rem;
           text-transform: uppercase;
           opacity: 0;
           transition: opacity 100ms ease-in;
@@ -193,10 +205,22 @@
 }
 
 @keyframes phone-shake {
-  0%   {transform: rotate(0deg)}
-  20%  {transform: rotate(-10deg)}
-  40%  {transform: rotate(10deg)}
-  60% {transform: rotate(-10deg)}
-  80% {transform: rotate(10deg)}
-  100% {transform: rotate(0deg)}
+  0% {
+    transform: rotate(0deg);
+  }
+  20% {
+    transform: rotate(-10deg);
+  }
+  40% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(-10deg);
+  }
+  80% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
 }

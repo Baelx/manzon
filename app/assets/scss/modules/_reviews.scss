@@ -4,8 +4,14 @@
     background-color: $light-blue;
     color: white;
     width: 100%;
-    padding: 2rem 7rem;
+
+    padding: 1rem 1.1rem;
     text-align: center;
+
+    @include atLarge {
+      padding: 2rem 7rem;
+
+    }
 
     q {
       font-size: 30px;

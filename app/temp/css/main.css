@@ -414,11 +414,18 @@ a {
   width: 100%;
   z-index: 99;
   text-transform: uppercase;
-  color: white; }
+  color: white;
+  font-size: 1.5em; }
+  @media (min-width: 530px) {
+    .site-header {
+      font-size: 1em; } }
   @media (min-width: 800px) {
     .site-header {
       display: grid;
       grid-template-columns: 1fr auto minmax(600px, 1fr); } }
+  @media (min-width: 1010px) {
+    .site-header {
+      font-size: 0.9em; } }
   @media (min-width: 800px) {
     .site-header__logo {
       grid-column: 1 / 2;
@@ -442,7 +449,7 @@ a {
     position: absolute;
     left: 0;
     top: 0;
-    margin-left: 1em;
+    margin-left: 0.5em;
     height: 100%;
     display: flex;
     align-items: center; }
@@ -458,8 +465,7 @@ a {
     z-index: 99;
     transition: opacity 250ms ease-in; }
   .site-header__nav-toggle-label__bars, .site-header__nav-toggle-label__x {
-    position: absolute;
-    transform: rotate(90deg); }
+    position: absolute; }
   .site-header__nav-toggle-label__x {
     opacity: 0;
     z-index: -1; }
@@ -515,12 +521,14 @@ a {
         margin-left: 1em; }
         @media (min-width: 800px) {
           .site-header nav ul li {
-            margin-left: 3em;
+            margin-bottom: 0;
+            margin-left: 1.5em; } }
+        @media (min-width: 1010px) {
+          .site-header nav ul li {
             margin-bottom: 0; } }
         .site-header nav ul li a {
           text-decoration: none;
           color: white;
-          font-size: 1.2rem;
           text-transform: uppercase;
           opacity: 0;
           transition: opacity 100ms ease-in; }
@@ -638,7 +646,10 @@ a {
   z-index: 1; }
   .intro__text {
     margin: 0 3rem;
-    padding: 50px; }
+    padding: 50px 0 50px 0; }
+    @media (min-width: 1010px) {
+      .intro__text {
+        padding: 50px; } }
     .intro__text h3 {
       font-size: 30px; }
     .intro__text p {
@@ -652,14 +663,14 @@ a {
     @media (min-width: 530px) {
       .hero__video {
         width: 100%;
-        height: 100%; } }
+        height: auto; } }
     .hero__video video {
       width: auto;
       height: 100%; }
-      @media (min-width: 800px) {
+      @media (min-width: 1010px) {
         .hero__video video {
           width: 100%;
-          height: 620px; } }
+          height: 100%; } }
   .hero__text {
     z-index: 1;
     color: white;
@@ -763,8 +774,8 @@ a {
   width: 100%;
   z-index: 1;
   text-align: center;
-  padding: 2rem; }
-  @media (min-width: 800px) {
+  padding: 2rem 0 2rem 0; }
+  @media (min-width: 1010px) {
     .see-more {
       padding: 2rem 5rem; } }
   .see-more p {
@@ -773,16 +784,22 @@ a {
   .see-more .bg-zoom {
     background-size: 120% auto; }
   .see-more__industry {
-    width: 80%;
+    width: 90%;
     margin: 0 auto;
     margin-bottom: 15px;
-    background-size: 100%;
+    background-size: 125%;
     background-position: bottom;
     transition: background-size 0.25s ease; }
+    @media (min-width: 530px) {
+      .see-more__industry {
+        width: 80%; } }
     @media (min-width: 800px) {
       .see-more__industry {
         width: 50%;
         margin: 15px; } }
+    @media (min-width: 530px) {
+      .see-more__industry {
+        background-size: 100%; } }
     .see-more__industry::after {
       position: relative;
       display: block;
@@ -808,8 +825,8 @@ a {
         display: block;
         height: 10px;
         width: 100px;
-        -webkit-transition: all .25s ease;
-        transition: all .25s ease;
+        -webkit-transition: all 0.25s ease;
+        transition: all 0.25s ease;
         background-color: white; }
         .see-more__industry a .overline--extend {
           width: 100%; }
@@ -829,8 +846,11 @@ a {
   background-color: #9199b8;
   color: white;
   width: 100%;
-  padding: 2rem 7rem;
+  padding: 1rem 1.1rem;
   text-align: center; }
+  @media (min-width: 1220px) {
+    .reviews--section {
+      padding: 2rem 7rem; } }
   .reviews--section q {
     font-size: 30px;
     font-weight: 300; }
@@ -888,11 +908,19 @@ a {
     padding-top: 3rem;
     margin-top: 0; }
   .service-areas .areas--first {
-    float: left;
-    padding-left: 5rem; }
+    float: none;
+    padding: 0; }
+    @media (min-width: 800px) {
+      .service-areas .areas--first {
+        float: left;
+        padding-left: 5rem; } }
   .service-areas .areas--second {
-    float: right;
-    padding-right: 5rem; }
+    float: none;
+    padding: 0; }
+    @media (min-width: 800px) {
+      .service-areas .areas--second {
+        float: right;
+        padding-right: 5rem; } }
   .service-areas li {
     font-size: 23px;
     padding: 1rem 0;

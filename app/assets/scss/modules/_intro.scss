@@ -6,7 +6,11 @@
 
   &__text {
     margin: 0 3rem;
-    padding: 50px;
+    padding: 50px 0 50px 0;
+
+    @include atMedLarge {
+      padding: 50px;
+    }
 
     h3 {
       font-size: 30px;

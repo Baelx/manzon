@@ -17,14 +17,15 @@ const phoneHover = (selector) => {
   
   $(selector).hover(
     function() {
-      console.log('test2');
       $('.site-header__btn__phone').addClass('phone-shake');
+      console.log('hover');
+
     }, function() {
-      console.log("unhover")
+      $('.site-header__btn__phone').removeClass('phone-shake');
+      console.log("unhover");
     }
   )
 }
 
-const sus = 56;
 
-export {seeMoreHover, phoneHover, sus};
+export {seeMoreHover, phoneHover};
