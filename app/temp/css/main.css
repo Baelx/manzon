@@ -426,6 +426,9 @@ a {
   @media (min-width: 1010px) {
     .site-header {
       font-size: 0.9em; } }
+  @media (min-width: 1220px) {
+    .site-header {
+      font-size: 1.3em; } }
   @media (min-width: 800px) {
     .site-header__logo {
       grid-column: 1 / 2;
@@ -522,10 +525,14 @@ a {
         @media (min-width: 800px) {
           .site-header nav ul li {
             margin-bottom: 0;
-            margin-left: 1.5em; } }
+            margin-left: 0.9em; } }
         @media (min-width: 1010px) {
           .site-header nav ul li {
-            margin-bottom: 0; } }
+            margin-bottom: 0;
+            margin-left: 0.9em; } }
+        @media (min-width: 1220px) {
+          .site-header nav ul li {
+            margin-left: 1.2em; } }
         .site-header nav ul li a {
           text-decoration: none;
           color: white;

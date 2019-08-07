@@ -21,6 +21,10 @@
     font-size: 0.9em;
   }
 
+  @include atLarge {
+    font-size: 1.3em;
+  }
+
 
 
   &__logo {
@@ -158,11 +162,17 @@
 
         @include atMedium {
           margin-bottom: 0;
-          margin-left: 1.5em;
+          margin-left: 0.9em;
         }
 
         @include atMedLarge {
           margin-bottom: 0;
+          margin-left: 0.9em;
+
+        }
+
+        @include atLarge {
+          margin-left: 1.2em;
         }
 
         a {
