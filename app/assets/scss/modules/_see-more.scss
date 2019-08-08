@@ -29,8 +29,13 @@
     }
 
     @include atMedium {
+      width: 46%;
+      margin: 2%;
+    }
+
+    @include atMedLarge {
       width: 50%;
-      margin: 15px;
+      margin: 1%;
     }
 
     background-size: 125%;

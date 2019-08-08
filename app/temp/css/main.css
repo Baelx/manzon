@@ -802,8 +802,12 @@ a {
         width: 80%; } }
     @media (min-width: 800px) {
       .see-more__industry {
+        width: 46%;
+        margin: 2%; } }
+    @media (min-width: 1010px) {
+      .see-more__industry {
         width: 50%;
-        margin: 15px; } }
+        margin: 1%; } }
     @media (min-width: 530px) {
       .see-more__industry {
         background-size: 100%; } }
@@ -941,14 +945,20 @@ a {
     box-shadow: 3px 3px 2px black; }
 
 .call-now {
-  font-size: 33px;
+  font-size: 1.5em;
   margin-bottom: 3px; }
+  @media (min-width: 800px) {
+    .call-now {
+      font-size: 2em; } }
 
 .call-to-action {
-  padding: 2rem 0;
+  padding: 2em 1em;
   display: flex;
   align-items: center;
   flex-direction: column; }
+  @media (min-width: 530px) {
+    .call-to-action {
+      padding: 2rem 0; } }
   .call-to-action .btn {
     font-size: 20px;
     padding: 1rem 2rem;
