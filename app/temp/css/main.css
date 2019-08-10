@@ -652,10 +652,14 @@ a {
   width: 100%;
   z-index: 1; }
   .intro__text {
-    margin: 0 3rem;
-    padding: 50px 0 50px 0; }
+    margin: 0 2rem;
+    padding: 20px 0 20px 0; }
+    @media (min-width: 530px) {
+      .intro__text {
+        padding: 50px 0 50px 0; } }
     @media (min-width: 1010px) {
       .intro__text {
+        margin: 0 3rem;
         padding: 50px; } }
     .intro__text h3 {
       font-size: 30px; }
@@ -681,14 +685,24 @@ a {
   .hero__text {
     z-index: 1;
     color: white;
+    position: absolute;
     top: 50%;
-    left: 0;
-    transform: translate(25%, -125%);
-    width: 530px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     background-color: #0000009e;
     padding: 3em 2em;
     border-radius: 7px;
     line-height: 1.3; }
+    @media (min-width: 530px) {
+      .hero__text {
+        font-size: 0.9em; } }
+    @media (min-width: 800px) {
+      .hero__text {
+        left: 10%;
+        transform: translate(0, -50%);
+        width: 530px;
+        font-size: 1em; } }
     .hero__text--headline {
       font-size: 2em;
       margin: 0; }
@@ -747,7 +761,8 @@ a {
       border-radius: 7px;
       line-height: 1.3;
       position: relative; }
-      .hero--404__text p, .hero--404__text button {
+      .hero--404__text p,
+      .hero--404__text button {
         font-size: 30px;
         margin-bottom: 1em; }
 
@@ -757,9 +772,6 @@ a {
   @media (min-width: 800px) {
     .features {
       padding: 1.5em; } }
-  .features .container--industry {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr); }
   .features .feature {
     display: flex;
     align-items: center;
@@ -853,6 +865,10 @@ a {
       .see-more .container--industries {
         display: flex; } }
 
+.container--industry {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); }
+
 .reviews--section {
   background-color: #9199b8;
   color: white;
@@ -938,11 +954,15 @@ a {
     color: #4f70ed;
     text-shadow: 1px 1px 1px #10205c; }
   .service-areas .map {
-    margin: 1.5rem 0 6rem 0;
-    padding: 0;
-    border: 5px solid lightgrey;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px black; }
+    display: none; }
+    @media (min-width: 800px) {
+      .service-areas .map {
+        display: inherit;
+        margin: 1.5rem 0 6rem 0;
+        padding: 0;
+        border: 5px solid lightgrey;
+        border-radius: 2px;
+        box-shadow: 3px 3px 2px black; } }
 
 .call-now {
   font-size: 1.5em;

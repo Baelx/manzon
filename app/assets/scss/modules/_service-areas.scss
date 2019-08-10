@@ -3,7 +3,7 @@
   text-align: center;
 
   .cover {
-    background-color: hsla(0,0%,100%,.6);
+    background-color: hsla(0, 0%, 100%, 0.6);
   }
 
   h3 {
@@ -13,29 +13,24 @@
     margin-top: 0;
   }
 
-
   .areas--first {
-float: none;
-padding: 0;
+    float: none;
+    padding: 0;
 
-
-@include atMedium {
-  float: left;
-  padding-left: 5rem;
-}
-
+    @include atMedium {
+      float: left;
+      padding-left: 5rem;
+    }
   }
 
   .areas--second {
     float: none;
     padding: 0;
 
-@include atMedium {
-
-    float: right;
-    padding-right: 5rem;
-}
-
+    @include atMedium {
+      float: right;
+      padding-right: 5rem;
+    }
   }
 
   li {
@@ -45,12 +40,16 @@ padding: 0;
     text-shadow: 1px 1px 1px $dark-blue;
   }
 
-
   .map {
-    margin: 1.5rem 0 6rem 0;
-    padding: 0;
-    border: 5px solid lightgrey;
-    border-radius: 2px;
-    box-shadow: 3px 3px 2px black;
+    display: none;
+
+    @include atMedium {
+      display: inherit;
+      margin: 1.5rem 0 6rem 0;
+      padding: 0;
+      border: 5px solid lightgrey;
+      border-radius: 2px;
+      box-shadow: 3px 3px 2px black;
+    }
   }
 }

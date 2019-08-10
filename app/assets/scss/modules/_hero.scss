@@ -8,7 +8,7 @@
     @include atSmall {
       width: 100%;
       height: auto;
-    } 
+    }
 
     video {
       width: auto;
@@ -24,14 +24,26 @@
   &__text {
     z-index: 1;
     color: white;
+    position: absolute;
     top: 50%;
-    left: 0;
-    transform: translate(25%, -125%);
-    width: 530px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     background-color: #0000009e;
     padding: 3em 2em;
     border-radius: 7px;
     line-height: 1.3;
+
+    @include atSmall {
+      font-size: 0.9em;
+    }
+
+    @include atMedium {
+      left: 10%;
+      transform: translate(0, -50%);
+      width: 530px;
+      font-size: 1em;
+    }
 
     &--headline {
       font-size: 2em;
@@ -48,7 +60,6 @@
     }
   }
 
-
   &--industry-page {
     height: 400px;
     width: 100%;
@@ -61,7 +72,7 @@
       top: 0;
       width: 100%;
       height: 100%;
-      background-image: linear-gradient(to bottom, rgba(0,0,0,0), rgba(0,0,0,1));
+      background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1));
     }
 
     &__title {
@@ -115,8 +126,8 @@
       line-height: 1.3;
       position: relative;
 
-
-      p, button {
+      p,
+      button {
         font-size: 30px;
         margin-bottom: 1em;
       }
