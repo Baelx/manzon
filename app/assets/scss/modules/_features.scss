@@ -6,6 +6,18 @@
     padding: 1.5em;
   }
 
+  .container--industry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+
+
+    @include atMedium {
+    grid-template-columns: repeat(4, 1fr);
+
+    }
+  }
+
   .feature {
     display: flex;
     align-items: center;
@@ -13,7 +25,6 @@
 
     p {
       display: inline;
-      
     }
 
     &__title {
@@ -23,14 +34,11 @@
     &--detail {
       margin: 0 1em;
 
-
       p {
         font-size: 20px;
         margin-top: 0;
         font-weight: 300;
       }
     }
-
   }
-
 }

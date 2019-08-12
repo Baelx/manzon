@@ -529,10 +529,10 @@ a {
         @media (min-width: 1010px) {
           .site-header nav ul li {
             margin-bottom: 0;
-            margin-left: 0.9em; } }
+            margin-left: 1em; } }
         @media (min-width: 1220px) {
           .site-header nav ul li {
-            margin-left: 1.2em; } }
+            margin-left: 1.5em; } }
         .site-header nav ul li a {
           text-decoration: none;
           color: white;
@@ -645,6 +645,10 @@ a {
     font-size: 45px; }
   .section-title--no-p {
     padding: 0; }
+  .section-title--no-m {
+    margin: 0; }
+  .section-title--white {
+    color: white; }
 
 .intro {
   background-color: #9199b8;
@@ -712,8 +716,11 @@ a {
       font-size: 22px;
       padding-bottom: 3px; }
   .hero--industry-page {
-    height: 400px;
+    height: 300px;
     width: 100%; }
+    @media (min-width: 800px) {
+      .hero--industry-page {
+        height: 400px; } }
     .hero--industry-page::after {
       position: absolute;
       display: block;
@@ -724,17 +731,22 @@ a {
       height: 100%;
       background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0), black); }
     .hero--industry-page__title {
-      padding: 170px 90px;
-      display: inline-block; }
+      align-items: center;
+      display: flex;
+      height: 100%; }
     .hero--industry-page h1 {
       color: white;
       text-transform: uppercase;
-      font-size: 4rem;
       position: relative;
       margin: 0;
       z-index: 1;
       font-weight: 200;
-      letter-spacing: 3px; }
+      letter-spacing: 3px;
+      font-size: 3rem;
+      margin-left: 3rem; }
+      @media (min-width: 800px) {
+        .hero--industry-page h1 {
+          font-size: 4rem; } }
   .hero--home-page {
     height: 650px;
     overflow: hidden; }
@@ -772,6 +784,12 @@ a {
   @media (min-width: 800px) {
     .features {
       padding: 1.5em; } }
+  .features .container--industry {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
+    @media (min-width: 800px) {
+      .features .container--industry {
+        grid-template-columns: repeat(4, 1fr); } }
   .features .feature {
     display: flex;
     align-items: center;
@@ -786,6 +804,10 @@ a {
         font-size: 20px;
         margin-top: 0;
         font-weight: 300; }
+
+.property-managers {
+  color: white;
+  background-color: #10205c; }
 
 .see-more {
   background-color: #9199b8;
@@ -864,10 +886,6 @@ a {
     @media (min-width: 800px) {
       .see-more .container--industries {
         display: flex; } }
-
-.container--industry {
-  display: grid;
-  grid-template-columns: repeat(4, 1fr); }
 
 .reviews--section {
   background-color: #9199b8;
@@ -965,20 +983,20 @@ a {
         box-shadow: 3px 3px 2px black; } }
 
 .call-now {
-  font-size: 1.5em;
   margin-bottom: 3px; }
-  @media (min-width: 800px) {
-    .call-now {
-      font-size: 2em; } }
 
 .call-to-action {
   padding: 2em 1em;
+  font-size: 1.5em;
   display: flex;
   align-items: center;
   flex-direction: column; }
   @media (min-width: 530px) {
     .call-to-action {
       padding: 2rem 0; } }
+  @media (min-width: 800px) {
+    .call-to-action {
+      font-size: 2em; } }
   .call-to-action .btn {
     font-size: 20px;
     padding: 1rem 2rem;
@@ -992,6 +1010,8 @@ a {
       transform: scale3d(1.05, 1.05, 1); }
   .call-to-action__call-now {
     margin-bottom: 2em; }
+  .call-to-action--white {
+    color: white; }
 
 .underline--feature {
   margin: 1em 0;
@@ -1050,7 +1070,11 @@ svg {
   font-weight: 300;
   background-color: #232323;
   color: white;
-  padding: 1em; }
+  padding: 1em;
+  font-size: 1.3em; }
+  @media (min-width: 530px) {
+    .site-footer {
+      font-size: 1em; } }
   @media (min-width: 800px) {
     .site-footer {
       padding: 4em; } }

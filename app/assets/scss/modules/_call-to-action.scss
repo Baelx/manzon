@@ -1,23 +1,17 @@
 .call-now {
-  font-size: 1.5em;
-
-  @include atMedium {
-    font-size: 2em;
-  }
-
-
   margin-bottom: 3px;
 }
 
 .call-to-action {
+  padding: 2em 1em;
+  font-size: 1.5em;
 
-padding: 2em 1em;
-
-@include atSmall {
-  padding: 2rem 0;
-
-}
-
+  @include atSmall {
+    padding: 2rem 0;
+  }
+  @include atMedium {
+    font-size: 2em;
+  }
 
   display: flex;
   align-items: center;
@@ -40,5 +34,9 @@ padding: 2em 1em;
 
   &__call-now {
     margin-bottom: 2em;
+  }
+
+  &--white {
+    color: white;
   }
 }

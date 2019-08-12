@@ -61,8 +61,13 @@
   }
 
   &--industry-page {
-    height: 400px;
+    height: 300px;
     width: 100%;
+
+    @include atMedium {
+    height: 400px;
+
+    }
 
     &::after {
       position: absolute;
@@ -76,19 +81,25 @@
     }
 
     &__title {
-      padding: 170px 90px;
-      display: inline-block;
+      align-items: center;
+      display: flex;
+      height: 100%;
     }
 
     h1 {
       color: white;
       text-transform: uppercase;
-      font-size: 4rem;
       position: relative;
       margin: 0;
       z-index: 1;
       font-weight: 200;
       letter-spacing: 3px;
+      font-size: 3rem;
+      margin-left: 3rem;
+      
+      @include atMedium {
+      font-size: 4rem;
+      }
     }
   }
 

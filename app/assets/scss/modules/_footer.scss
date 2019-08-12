@@ -4,6 +4,11 @@
   background-color: #232323;
   color: white;
   padding: 1em;
+  font-size: 1.3em;
+
+  @include atSmall {
+    font-size: 1em;
+  }
 
 
   @include atMedium {
