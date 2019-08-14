@@ -697,7 +697,8 @@ a {
     background-color: #0000009e;
     padding: 3em 2em;
     border-radius: 7px;
-    line-height: 1.3; }
+    line-height: 1.3;
+    font-size: 0.9em; }
     @media (min-width: 530px) {
       .hero__text {
         font-size: 0.9em; } }
@@ -784,6 +785,9 @@ a {
   @media (min-width: 800px) {
     .features {
       padding: 1.5em; } }
+  .features__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); }
   .features .container--industry {
     display: grid;
     grid-template-columns: repeat(3, 1fr); }
@@ -1038,8 +1042,13 @@ a {
   transition: transform ease-in-out 500ms; }
 
 svg {
-  width: 50px;
-  display: inline; }
+  width: 30px;
+  display: inline;
+  min-width: 30px; }
+  @media (min-width: 800px) {
+    svg {
+      min-width: 50px;
+      width: 50px; } }
 
 .check {
   stroke: #4f70ed;
@@ -1051,7 +1060,7 @@ svg {
   stroke-miterlimit: 10; }
 
 .check--animate {
-  animation: dash-check 1.25s .40s ease-in-out forwards; }
+  animation: dash-check 1.25s 0.4s ease-in-out forwards; }
 
 @-webkit-keyframes dash-check {
   0% {
