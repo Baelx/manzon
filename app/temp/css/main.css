@@ -749,7 +749,7 @@ a {
         .hero--industry-page h1 {
           font-size: 4rem; } }
   .hero--home-page {
-    height: 650px;
+    height: 90vh;
     overflow: hidden; }
   .hero--info-page {
     height: 250px; }
@@ -796,8 +796,7 @@ a {
         grid-template-columns: repeat(4, 1fr); } }
   .features .feature {
     display: flex;
-    align-items: center;
-    justify-content: center; }
+    align-items: center; }
     .features .feature p {
       display: inline; }
     .features .feature__title {
